@@ -50,14 +50,20 @@ Put this command in `package.json`
 
 ````js
 "scripts": {
-    "dev": "ts-node-dev src/server.ts",
-    "knex:migrate": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
+    "dev": "ts-node-dev --trasnpileOnly --ignore-watch node_modules src/server.ts",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "knex:seed": "knex --knexfile knexfile.ts seed:run"
 },
 ````
 
 Run this command to commit migrations 
 ````sh
 npm run knex:migrate
+````
+
+Run this command to send seeds to database
+````sh
+npm run knex:seed
 ````
 
 Run this project
