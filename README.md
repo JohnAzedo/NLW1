@@ -34,14 +34,30 @@ Create a file config to typescript
 npx tsc --init
 ````
 
+Use sqlite3 for application database
+````sh
+npm install sqlite3
+````
+
+Install knex to make connection with sqlite3 file
+````sh
+npm install knex
+````
+
 ### Run server
 
 Put this command in `package.json`
 
 ````js
 "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts",
+    "knex:migrate": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
 },
+````
+
+Run this command to commit migrations 
+````sh
+npm run knex:migrate
 ````
 
 Run this project
@@ -54,16 +70,6 @@ npm run dev
 Start yout project
 ````sh
 npx create-react-app web --template=typescript
-````
-
-Use sqlite3 for application database
-````sh
-npm install sqlite3
-````
-
-Install knex to make connection with sqlite3 file
-````sh
-npm install knex
 ````
 
 ### Run web
