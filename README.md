@@ -13,10 +13,12 @@ Include TypeScript dependences and JavaScript dependences on project
 ````sh
 # JavaScript
 npm install express
+npm install cors
 
 # TypeScript
 npm install ts-node -D
 npm install typescript -D
+npm install @types/cors -D
 ````
 
 Install TypeScript dependences to IntelliSense
@@ -50,7 +52,7 @@ Put this command in `package.json`
 
 ````js
 "scripts": {
-    "dev": "ts-node-dev --trasnpileOnly --ignore-watch node_modules src/server.ts",
+    "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:seed": "knex --knexfile knexfile.ts seed:run"
 },
