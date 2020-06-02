@@ -56,6 +56,16 @@ Start yout project
 npx create-react-app web --template=typescript
 ````
 
+Use sqlite3 for application database
+````sh
+npm install sqlite3
+````
+
+Install knex to make connection with sqlite3 file
+````sh
+npm install knex
+````
+
 ### Run web
 
 ````sh
