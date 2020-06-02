@@ -48,3 +48,16 @@ Run this project
 ````sh
 npm run dev
 ````
+
+## Web
+
+Start yout project
+````sh
+npx create-react-app web --template=typescript
+````
+
+### Run web
+
+````sh
+npm start
+````
