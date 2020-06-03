@@ -91,6 +91,12 @@ npm install react-router-dom
 npm install @types/react-router-dom -D
 ````
 
+Install leaflet to use maps in application
+````sh
+npm install leaflet
+npm install react-leaflet
+````
+
 ### Run web
 
 ````sh
