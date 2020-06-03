@@ -83,7 +83,13 @@ npx create-react-app web --template=typescript
 Install package to icons
 ````sh
 npm install react-icons
-`````
+````
+
+Install router package to navigate between pages
+````sh
+npm install react-router-dom
+npm install @types/react-router-dom -D
+````
 
 ### Run web
 
