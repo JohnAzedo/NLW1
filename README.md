@@ -80,6 +80,11 @@ Start yout project
 npx create-react-app web --template=typescript
 ````
 
+Install package to icons
+````sh
+npm install react-icons
+`````
+
 ### Run web
 
 ````sh
